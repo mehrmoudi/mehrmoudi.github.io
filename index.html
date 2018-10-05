@@ -21,7 +21,12 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Mehran Mahmoudi</h1>
-						<p>Software Engineer</p>
+						<h4>/mɛhˈrʌn mahˈmudi/
+							<span onclick="pronounceName()" style="padding-left: 8px; cursor:pointer;" class="icon fa-volume-up">
+								<span class="label">Listen</span>
+							</span>
+						</h4> 
+						<p style="font-size: 190%">Software Engineer</p>
 						<nav>
 							<ul>
 								<li><a href="https://linkedin.com/in/mehrmoudi" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -32,17 +37,16 @@
 						</nav>
 					</header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
-
 			</div>
 		</div>
 		<script>
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			var pronounceName = function() {
+				var audio = new Audio('mehran_mahmoudi.wav');
+				audio.play();
+			}
 		</script>
 	</body>
 </html>
